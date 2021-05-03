@@ -1,4 +1,6 @@
 import React from "react";
+import Button from "./Button";
+import "../css/Content.css";
 
 export enum CurrentPage {
   Home,
@@ -8,12 +10,18 @@ export enum CurrentPage {
 function Content(props: { page: CurrentPage }) {
   return (
     <>
+      <div className="content">
       {props.page === CurrentPage.Home && (
-        <div className="text">"What a guy" - Jacob Speicher</div>
+        <div className="intro">
+          Hey, I'm a software developer and aspiring game developer in Madison, WI.
+        </div>
       )}
       {props.page === CurrentPage.Games && (
-        <div className="text">"games!" - games</div>
+        <div className="intro">
+          Here's some games and concepts I've worked on
+        </div>
       )}
+      </div>
     </>
   );
 }
