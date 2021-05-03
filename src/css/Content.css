@@ -26,6 +26,11 @@
   flex-direction: row;
 }
 
+.gameLink {
+  flex-grow: 0;
+  flex-shrink: 1;
+}
+
 .gameTitle {
   font-size: 14pt;
   font-weight: bold;
@@ -35,4 +40,15 @@
 .gameDescription {
   margin-left: 25px;
   align-self: center;
+  min-width: 445px;
+}
+
+@media only screen and (orientation: portrait) {
+  .game {
+    flex-wrap: wrap;
+  }
+
+  .gameDescription {
+    margin-left: 0;
+  }
 }

@@ -41,6 +41,7 @@ function Content(props: { page: CurrentPage }) {
                 height="165"
                 frameBorder="0"
                 title="AMIAPSDD"
+                className="gameLink"
               >
                 <a href="https://paetramon.itch.io/amiaps-dd">
                   AMIAPS DD: A Man In A Potato Sack Digs Deep by Jacob Speicher
@@ -64,6 +65,7 @@ function Content(props: { page: CurrentPage }) {
                 height="167"
                 frameBorder="0"
                 title="PONG"
+                className="gameLink"
               >
                 <a href="https://paetramon.itch.io/pong-nes">
                   NES Pong by Jacob Speicher
@@ -82,6 +84,7 @@ function Content(props: { page: CurrentPage }) {
                 height="167"
                 frameBorder="0"
                 title="WORMHOLE"
+                className="gameLink"
               >
                 <a href="https://paetramon.itch.io/wormhole">
                   WORMHOLE by Jacob Speicher
