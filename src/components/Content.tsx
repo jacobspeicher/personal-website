@@ -13,8 +13,7 @@ function Content(props: { page: CurrentPage }) {
       <div className="content">
         {props.page === CurrentPage.Home && (
           <div className="intro">
-            Hey, I'm a software developer and game developer in
-            Madison, WI.
+            Hey, I'm a software developer and game developer in Madison, WI.
           </div>
         )}
         {props.page === CurrentPage.Games && (
