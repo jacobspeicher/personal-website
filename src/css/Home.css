@@ -1,0 +1,26 @@
+@import "./Colors.css";
+
+.home {
+}
+
+.navHeader {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  padding-bottom: 25px;
+}
+
+.header {
+  padding-top: 20px;
+  margin: auto;
+  font-size: 36pt;
+  cursor: pointer;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  margin-top: 25px;
+}
