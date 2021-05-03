@@ -1,16 +1,14 @@
 import React, { useState } from "react";
-import Button from "./components/Button";
+import Button, { LinkButton, DownloadButton } from "./components/Button";
 import Content, { CurrentPage } from "./components/Content";
 import "./css/Home.css";
 
 function Home() {
   const [page, setPage] = useState(CurrentPage.Home);
 
-  function changePage(dest?: number, link?: string) {
+  function changePage(dest?: number) {
     if (dest !== undefined) {
       setPage(dest);
-    } else if (link !== undefined) {
-      window.open(link, "_blank");
     }
   }
 
@@ -21,12 +19,17 @@ function Home() {
           Jacob Speicher
         </div>
         <div className="nav">
-          <Button
+          <LinkButton
             text="Github"
             handleClick={changePage}
             link="https://github.com/jacobspeicher"
           />
-          <Button text="Resume" handleClick={changePage} />
+          <DownloadButton
+            text="Resume"
+            handleClick={changePage}
+            link="Jacob Speicher Resume.pdf"
+            filename=""
+          />
           <Button
             text="Games"
             handleClick={changePage}
