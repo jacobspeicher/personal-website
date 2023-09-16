@@ -1,16 +1,18 @@
 import React, { useState } from "react";
-import Button, { LinkButton, DownloadButton } from "./components/Button";
-import Content, { CurrentPage } from "./components/Content";
+// import Button, { LinkButton, DownloadButton } from "./components/Button";
+import { CurrentPage } from "./components/Content";
 import "./css/Home.css";
 
 function Home() {
-  const [page, setPage] = useState(CurrentPage.Home);
+  // const [page, setPage] = useState(CurrentPage.Home);
 
+  /*
   function changePage(dest?: number) {
     if (dest !== undefined) {
       setPage(dest);
     }
   }
+  */
 
   return(
     <div>
