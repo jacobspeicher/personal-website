@@ -12,6 +12,13 @@ function Home() {
     }
   }
 
+  return(
+    <div>
+      A website? For Jacob Speicher? It might be more likely than you think.
+    </div>
+  );
+
+  /*
   return (
     <div className="home">
       <div className="navHeader">
@@ -40,6 +47,7 @@ function Home() {
       <Content page={page} />
     </div>
   );
+  */
 }
 
 export default Home;
