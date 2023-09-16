@@ -14,7 +14,7 @@ function Home() {
   }
   */
 
-  return(
+  return (
     <div>
       A website? For Jacob Speicher? It might be more likely than you think.
     </div>
