@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 // import Button, { LinkButton, DownloadButton } from "./components/Button";
-import { CurrentPage } from "./components/Content";
+// import { CurrentPage } from "./components/Content";
 import "./css/Home.css";
 
 function Home() {
