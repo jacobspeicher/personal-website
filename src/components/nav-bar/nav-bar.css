@@ -1,0 +1,11 @@
+.nav-bar {
+	background-color: #94d5d5;
+}
+
+.nav-container {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	gap: 10px;
+	list-style-type: none;
+}
