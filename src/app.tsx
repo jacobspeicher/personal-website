@@ -13,20 +13,43 @@ import { Footer } from './components/footer/footer';
 export function App() {
   // const [count, setCount] = useState(0)
 
-	const menuOptions = [
+	const links = [
 		{
-			text: 'Web Projects'
+			text: 'github',
+			link: 'https://github.com/jacobspeicher',
+			externalLink: true,
 		},
 		{
-			text: 'Games'
+			text: 'itch.io',
+			link: 'https://paetramon.itch.io',
+			externalLink: true,
+		},
+		{
+			text: 'linkedin',
+			link: 'https://linkedin.com/in/jacobspeicher',
+			externalLink: true,
+		}
+	];
+
+	const menuOptions = [
+		{
+			text: 'Web Projects',
+			link: 'web-projects',
+			externalLink: false,
+		},
+		{
+			text: 'Games',
+			link: 'games',
+			externalLink: false,
 		},
 	];
 
-  return (
-    <>
-      <Header />
-      <NavBar menuOptions={menuOptions} />
-      <Footer />
-    </>
-  )
+	return (
+		<>
+			<Header />
+			<NavBar menuOptions={links} />
+			<NavBar menuOptions={menuOptions} />
+			<Footer />
+		</>
+	)
 }

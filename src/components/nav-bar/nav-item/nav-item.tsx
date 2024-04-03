@@ -1,10 +1,21 @@
 import './nav-item.css';
 
-export function NavItem(props: { text: string }) {
-	const { text } = props;
+export interface MenuOption {
+	text: string,
+	link: string,
+	externalLink: boolean,
+};
+
+export function NavItem(props: MenuOption) {
+	const { text, link, externalLink } = props;
+
 	return (
 		<>
-			<li className='nav-item'>{text}</li>
+			<a href={link} target={externalLink ? '_blank' : ''} className='nav-item'>
+				<li>
+					<p className='nav-item-text'>{text}</p>
+				</li>
+			</a>
 		</>
 	);
 }

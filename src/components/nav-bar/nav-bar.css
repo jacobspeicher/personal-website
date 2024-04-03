@@ -6,6 +6,15 @@
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: center;
-	gap: 10px;
 	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.nav-container:first-child {
+	margin-left: -100px;
+}
+
+.nav-container:last-child {
+	margin-right: -100px;
 }

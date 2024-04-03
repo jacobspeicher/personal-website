@@ -1,8 +1,8 @@
-import { NavItem } from './nav-item/nav-item';
+import { NavItem, MenuOption } from './nav-item/nav-item';
 
 import './nav-bar.css';
 
-export function NavBar(props: { menuOptions: { text: string }[] }) {
+export function NavBar(props: { menuOptions: MenuOption[] }) {
 	const { menuOptions } = props;
 	return (
 		<>
@@ -11,7 +11,7 @@ export function NavBar(props: { menuOptions: { text: string }[] }) {
 					{
 						menuOptions.map((option) => {
 							return (
-								<NavItem text={option.text} />
+								<NavItem text={option.text} link={option.link} externalLink={option.externalLink} />
 							)
 						})
 					}
