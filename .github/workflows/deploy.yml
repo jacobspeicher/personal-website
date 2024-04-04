@@ -17,6 +17,6 @@ jobs:
 
           script: |
             cd /var/www/jacobspeicher.com/personal-website
-            sudo git pull
+            echo ${{ secrets.USER_PASSWD }} | sudo git pull
             sudo npm run build
             echo 'Deployment successful'
