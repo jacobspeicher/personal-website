@@ -1,20 +1,17 @@
 .nav-item {
-	background-color: #94d5d5;
-	border: 1px solid rgb(24, 24, 26);
+	background-color: var(--main-color);
+	border: 1px solid var(--highlight-color);
+	border-radius: 25px;
 	min-width: 150px;
 	min-height: 10px;
 	line-height: 10px;
 	flex-basis: auto;
 	text-align: center;
-	flex-grow: 1;
-
-	transform: skewX(45deg);
 }
 
 .nav-item:hover {
-	background-color: #ee8b31;
+	background-color: var(--accent-color); 
 }
 
 .nav-item-text {
-	transform: skewX(-45deg);
 }
