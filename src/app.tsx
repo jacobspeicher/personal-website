@@ -3,7 +3,7 @@ import './app.css'
 
 import { Header } from './components/header/header';
 import { NavBar } from './components/nav-bar/nav-bar';
-import { Footer } from './components/footer/footer';
+/*import { Footer } from './components/footer/footer';*/
 
 export function App() {
   	// const [count, setCount] = useState(0)
@@ -26,6 +26,7 @@ export function App() {
 		}
 	];
 
+	/*
 	const menuOptions = [
 		{
 			text: 'Web Projects',
@@ -38,6 +39,7 @@ export function App() {
 			externalLink: false,
 		},
 	];
+	*/
 
 	return (
 		<>
