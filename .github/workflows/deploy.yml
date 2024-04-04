@@ -16,6 +16,7 @@ jobs:
           username: ${{secrets.SSH_USERNAME}}
 
           script: |
-            cd /var/www/jacobspeicher.com/html
-            sudo git clone git@github.com:jacobspeicher/personal-website.git
+            cd /var/www/jacobspeicher.com/personal-website
+            sudo git pull
+            sudo npm run build
             echo 'Deployment successful'
