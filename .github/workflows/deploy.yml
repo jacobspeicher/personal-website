@@ -20,5 +20,5 @@ jobs:
           envs: USER_PASS
 
           script: |
-            ./deploy.sh
+            . ./deploy.sh
             echo 'Deployment successful'
