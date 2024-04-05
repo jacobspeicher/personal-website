@@ -16,7 +16,5 @@ jobs:
           username: ${{secrets.SSH_USERNAME}}
 
           script: |
-            cd /var/www/jacobspeicher.com/personal-website
-            git pull
-            npm run build
+            ./deploy.sh ${{secrets.USER_PASSWD}}
             echo 'Deployment successful'
