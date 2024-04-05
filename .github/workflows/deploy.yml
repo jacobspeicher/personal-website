@@ -5,7 +5,7 @@ on:
     branches: [main]
 
 env:
-  user_password: ${{secrets.USER_PASSWD}}
+  USER_PASS: ${{secrets.USER_PASSWD}}
 
 jobs:
   deploy:
@@ -17,8 +17,8 @@ jobs:
           host: ${{secrets.SSH_HOST}}
           key: ${{secrets.SSH_KEY}}
           username: ${{secrets.SSH_USERNAME}}
-          envs: user_password
+          envs: USER_PASS
 
           script: |
-            ./deploy.sh
+            echo "I am $USER_PASS"
             echo 'Deployment successful'
