@@ -5,7 +5,7 @@ on:
     branches: [main]
 
 env:
-  pass: ${{secrets.USER_PASSWD}}
+  user_password: ${{secrets.USER_PASSWD}}
 
 jobs:
   deploy:
