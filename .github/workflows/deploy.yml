@@ -17,6 +17,6 @@ jobs:
 
           script: |
             cd /var/www/jacobspeicher.com/personal-website
-            SUDO_ASKPASS="~/pass" sudo -A git pull
-            SUDO_ASKPASS="~/pass" sudo -A npm run build
+            git pull
+            npm run build
             echo 'Deployment successful'
