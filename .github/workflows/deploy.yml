@@ -27,4 +27,4 @@ jobs:
           privateKey: ${{secrets.SSH_KEY}}
           username: ${{secrets.SSH_USERNAME}}
           local: ./dist
-          remote: ~/copied
+          remote: ../../var/www/jacobspeicher.com/dist
