@@ -16,6 +16,7 @@
   --highlight-color: #ffcdc5;
   --main-color: #ffaca4;
   --accent-color: #e67383;
+  --text-color: #ffffff;
 }
 
 a {
@@ -74,6 +75,7 @@ button:focus-visible {
     --highlight-color: #e67383;
     --main-color: #ffaca4;
     --accent-color: #ffcdc5;
+    --text-color: rgb(18, 18, 18);
   }
 
   button {

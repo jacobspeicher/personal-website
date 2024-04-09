@@ -20,7 +20,7 @@
 }
 
 .experience-description {
-	color: #ffffff;
+	color: var(--text-color);
 	margin: -1;
 	padding-left: 19px;
 	list-style-type: "> ";
