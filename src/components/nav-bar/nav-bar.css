@@ -11,7 +11,7 @@
 	gap: 20px;
 }
 
-@media only screen and (min-width: 429px) {
+@media only screen and (min-width: 469) {
 	.nav-container {
 		flex-direction: row;
 		gap: 100px;
