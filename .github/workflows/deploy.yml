@@ -4,22 +4,16 @@ on:
   push:
     branches: [main]
 
-env:
-  USER_PASS: ${{secrets.USER_PASSWD}}
-
 jobs:
   deploy:
     runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:
       - name: Deploy website
-        uses: appleboy/ssh-action@v0.1.2
+        uses: garygrossgarten/github-action-scp@release
         with:
           host: ${{secrets.SSH_HOST}}
-          key: ${{secrets.SSH_KEY}}
+          privateKey: ${{secrets.SSH_KEY}}
           username: ${{secrets.SSH_USERNAME}}
-          envs: USER_PASS
-
-          script: |
-            . ./deploy.sh
-            echo 'Deployment successful'
+          local: ./src/assets
+          remote: ~/copied
