@@ -3,6 +3,7 @@ import './app.css'
 
 import { Header } from './components/header/header';
 import { NavBar } from './components/nav-bar/nav-bar';
+import { Resume } from './components/resume/resume';
 /*import { Footer } from './components/footer/footer';*/
 
 export function App() {
@@ -45,6 +46,7 @@ export function App() {
 		<>
 			<Header />
 			<NavBar menuOptions={links} />
+			<Resume />
 		</>
 	);
 }

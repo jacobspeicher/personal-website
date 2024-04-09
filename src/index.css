@@ -29,6 +29,14 @@ h1 {
   line-height: 1.1;
 }
 
+h3 {
+  margin: 0 0 5px 0;
+}
+
+h4 {
+  margin: 0 0 5px 0;
+}
+
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -46,6 +54,15 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+.center-format {
+  display: flex;
+  flex-direction: row;
+}
+
+.spacer {
+  flex-grow: 10;
 }
 
 @media (prefers-color-scheme: light) {

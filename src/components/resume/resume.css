@@ -1,0 +1,7 @@
+.resume {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	padding-top: 45px;
+	max-width: 55vw;
+}
