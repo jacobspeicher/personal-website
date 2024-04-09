@@ -8,15 +8,13 @@
 .experience-header {
 	color: var(--main-color);
 	display: flex;
-	flex-direction: row;
-	gap: 9px;
+	flex-direction: column;
 }
 
 .experience-lt {
 	color: var(--highlight-color);
 	display: flex;
-	flex-direction: row;
-	gap: 9px;
+	flex-direction: column;
 }
 
 .experience-description {
@@ -44,5 +42,17 @@
 
 	&::marker {
 		color: var(--highlight-color);
+	}
+}
+
+@media only screen and (min-width: 469px) {
+	.experience-header {
+		flex-direction: row;
+		gap: 9px;
+	}
+
+	.experience-lt {
+		flex-direction: row;
+		gap: 9px;
 	}
 }

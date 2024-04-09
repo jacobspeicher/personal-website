@@ -25,14 +25,14 @@ export function Experience(props: { information: IExperience }) {
 			<div className="experience">
 				<div className="experience-header">
 					<h3>{title}</h3>
-					<h3 aria-hidden>|</h3>
+					<h3 aria-hidden className="mobile-hidden">|</h3>
 					<h3>{company}</h3>
 				</div>
 				<div className="experience-lt">
 					<h4>
 						{startDateString} - {endDateString}
 					</h4>
-					<h4 aria-hidden>|</h4>
+					<h4 aria-hidden className="mobile-hidden">|</h4>
 					<h4>{location}</h4>
 				</div>
 				<ul className="experience-description">

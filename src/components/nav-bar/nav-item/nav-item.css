@@ -2,16 +2,22 @@
 	background-color: var(--main-color);
 	border: 1px solid var(--highlight-color);
 	border-radius: 25px;
-	min-width: 150px;
+	min-width: 200px;
 	min-height: 10px;
 	line-height: 10px;
-	flex-basis: auto;
 	text-align: center;
+	margin: auto;
 }
 
 .nav-item:hover {
 	background-color: var(--accent-color); 
 }
 
-.nav-item-text {
+@media only screen and (min-width: 469px) {
+	.nav-item {
+		min-width: 150px;
+		min-height: 10px;
+		flex-basis: auto;
+		margin: 0;
+	}
 }

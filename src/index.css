@@ -63,7 +63,13 @@ button:focus-visible {
 }
 
 .spacer {
-  flex-grow: 10;
+  flex-grow: 1;
+}
+
+.mobile-hidden {
+  visibility: hidden;
+  height: 0;
+  margin: 0;
 }
 
 @media (prefers-color-scheme: light) {
@@ -80,5 +86,16 @@ button:focus-visible {
 
   button {
     background-color: var(--accent-color);
+  }
+}
+
+@media only screen and (min-width: 469px) {
+  .mobile-hidden {
+    visibility: visible;
+    height: auto;
+  }
+
+  .spacer {
+    flex-grow: 10;
   }
 }

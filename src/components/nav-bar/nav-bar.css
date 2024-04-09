@@ -3,10 +3,18 @@
 
 .nav-container {
 	display: flex;
-	flex-flow: row wrap;
+	flex-direction: column;
 	justify-content: center;
 	list-style-type: none;
 	padding: 0;
 	margin: 0;
-	gap: 100px;
+	gap: 20px;
+}
+
+@media only screen and (min-width: 429px) {
+	.nav-container {
+		flex-direction: row;
+		gap: 100px;
+		justify-content: center;
+	}
 }
