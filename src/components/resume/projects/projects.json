@@ -1,0 +1,69 @@
+{
+	"projects": [
+		{
+			"name": "pAGE",
+			"link": "https://github.com/jacobspeicher/pAGE",
+			"languages": [
+				"C++",
+				"OpenGL",
+				"GLSL",
+				"Dear ImGUI"
+			],
+			"descriptions": [
+				{
+					"line": "Program that renders 3D models using OpenGL",
+					"sublines": [
+						"Entity-Component-System architecture to handle transform, models, and rendering techniques using data oriented design"
+					]
+				},
+				{
+					"line": "Dear ImGUI used to create the user interface"
+				},
+				{
+					"line": "Camera system allows the user to move through the scene in 3D"
+				},
+				{
+					"line": "Rendering system performs calculations to convert the model's local coordinates to clip space for displaying on the screen"
+				},
+				{
+					"line": "Uses a second color buffer to allow users to quickly select objects in the scene by clicking them"
+				}
+			]
+		},
+		{
+			"name": "Accordion Solitaire",
+			"link": "https://github.com/jacobspeicher/AccordionSolitaire",
+			"languages": [
+				"C++",
+				"SFML",
+				"GLSL"
+			],
+			"descriptions": [
+				{
+					"line": "A PC solitaire game written in C++ using SFML to handle the window management and rendering"
+				},
+				{
+					"line": "Loaded textures, defined materials, and wrote shaders to render the playing cards to the screen"
+				}
+			]
+		},
+		{
+			"name": "PONG",
+			"link": "https://github.com/jacobspeicher/NESPong",
+			"languages": [
+				"6502 Assembly"
+			],
+			"descriptions": [
+				{
+					"line": "A playable NES ROM for a 2-player game of PONG"
+				},
+				{
+					"line": "Uses assembly to communicate between the CPU, the CHR and ROM banks, RAM, and the Picture Processing Unit"
+				},
+				{
+					"line": "Created all art and fonts"
+				}
+			]
+		}
+	]
+}

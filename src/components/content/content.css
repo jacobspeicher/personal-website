@@ -1,0 +1,15 @@
+.tab-header {
+	display: flex;
+	flex-direction: row;
+	margin: auto;
+	border-bottom: 2px solid var(--main-color);
+	overflow: hidden;
+	padding-top: 30px;
+	justify-content: center;
+	gap: 15px;
+}
+
+.temp {
+	color: var(--text-color);
+	margin: auto;
+}

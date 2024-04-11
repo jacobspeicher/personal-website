@@ -1,89 +1,69 @@
-import { IExperience, Experience } from "./experience/experience";
+import { IDescription } from "../shared/interfaces";
+import { Experience } from "./experience/experience";
+import ExperienceJSON from './experience/experience.json';
+import { IProject, Project } from "./projects/project";
+import ProjectJSON from "./projects/projects.json";
 import './resume.css';
 
-const dzx: IExperience = {
-	company: 'DZX (Contract: PlayStation)',
-	title: 'Software Development Engineer in Test',
-	startDate: new Date(2021, 4),
-	location: 'Remote (Office in Madison, WI)',
-	descriptions: [
-		{
-			line: 'Design, develop, and improve the usability of internal tools used to build online PlayStation Store experiences.',
-			sublines: [
-				'Provide feedback on stories’ acceptance criteria and direction during planning and sprint ceremonies.',
-				'Take on new feature development work and resolve technical debt.',
-			],
-		},
-		{
-			line: 'Build and maintain a robust testing automation foundation codebase to allow anyone to easily script application tests for the frontend.',
-		},
-		{
-			line: 'Identify opportunities to increase testing coverage by thoroughly understanding code changes during the code review process.',
-			sublines: [
-				'Ensure the quality and relevancy of unit and component tests.',
-			],
-		},
-	],
-};
+interface IExperienceJSON {
+	company: string;
+	title: string;
+	startDate: DateJSON;
+	endDate?: DateJSON;
+	location: string;
+	descriptions: IDescription[];
+}
 
-const epic: IExperience = {
-	company: 'Epic Systems',
-	title: 'Software Developer',
-	startDate: new Date(2019, 6),
-	endDate: new Date(2020, 11),
-	location: 'Madison, WI',
-	descriptions: [
-		{
-			line: 'Created a new web application for admitting, transferring, and discharging hospital inpatients to make efficient use of hospital bed space.',
-		},
-		{
-			line: 'Lead the architecture and development of a new automated system which would assign patients to beds based on user-defined rulesets.',
-			sublines: [
-				'Work done for a customer in Singapore, requiring regular remote check-ins and design documentation reviews.',
-			],
-		},
-		{
-			line: 'Worked closely with UI/UX design and QA team members to ensure high quality of new functionality and usability while maintaining velocity.',
-		},
-	],
-};
+interface DateJSON {
+	year: number;
+	month: number;
+}
 
-const cogworks: IExperience = {
-	company: 'CogWorks Lab',
-	title: 'AI Programmer/Researcher',
-	startDate: new Date(2017, 1),
-	endDate: new Date(2019, 4),
-	location: 'Troy, NY',
-	descriptions: [
-		{
-			line: 'Independent contributor in the Cognitive Science department.',
-		},
-		{
-			line: 'Implemented functionality for cross-entropy reinforcement learning (CERL) models that modeled Tetris play to make decisions using information about future tetrominoes.',
-		},
-		{
-			line: 'Studied how the CERL models could be used to understand human performance and expertise within Tetris.',
-		},
-	],
-};
+function renderContent(type: 'experience'|'projects') {
+	if (type === 'experience') {
+		return (
+			ExperienceJSON.experience.map((exp: IExperienceJSON, idx: number) => {
+				const startDate = new Date(exp.startDate.year, exp.startDate.month);
+				const endDate = exp.endDate ? new Date(exp.endDate.year, exp.endDate.month) : undefined;
+				return (
+					<Experience
+						company={exp.company}
+						title={exp.title}
+						startDate={startDate}
+						endDate={endDate}
+						location={exp.location}
+						descriptions={exp.descriptions}
+						key={idx}
+					/>
+				);
+			})
+		)
+	}
 
-const experience = [
-	dzx,
-	epic,
-	cogworks,
-];
+	if (type === 'projects') {
+		return (
+			ProjectJSON.projects.map((project: IProject, idx: number) => {
+				return (
+					<Project
+						name={project.name}
+						link={project.link}
+						languages={project.languages}
+						descriptions={project.descriptions}
+						key={idx}
+					/>
+				)
+			})
+		)
+	}
+}
 
-export function Resume() {
+export function Resume(props: { type: 'experience' | 'projects' }) {
 	return (
 		<>
 			<div className="center-format">
 				<div className="spacer" aria-hidden></div>
 				<div className="resume">
-					{experience.map((exp, idx) => {
-						return (
-							<Experience information={exp} key={idx} />
-						);
-					})}
+					{renderContent(props.type)}
 				</div>
 				<div className="spacer" aria-hidden></div>
 			</div>
