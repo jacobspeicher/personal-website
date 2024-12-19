@@ -13,13 +13,13 @@ export function App() {
 			externalLink: true,
 		},
 		{
-			text: 'itch.io',
-			link: 'https://paetramon.itch.io',
+			text: 'linkedin',
+			link: 'https://linkedin.com/in/jacobspeicher',
 			externalLink: true,
 		},
 		{
-			text: 'linkedin',
-			link: 'https://linkedin.com/in/jacobspeicher',
+			text: 'itch.io',
+			link: 'https://paetramon.itch.io',
 			externalLink: true,
 		}
 	];

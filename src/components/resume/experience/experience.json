@@ -1,35 +1,44 @@
 {
 	"experience": [
 		{
-			"company": "DZX (Contract: PlayStation)",
+			"company": "Sony Interactive Entertainment (contract: DZX)",
 			"title": "Software Development Engineer in Test",
 			"startDate": {
 				"year": 2021,
 				"month": 4
 			},
-			"location": "Remote (Office in Madison, WI)",
+			"location": "Remote - Santa Fe, NM (office in Madison, WI)",
 			"descriptions": [
 				{
-					"line": "Design, develop, and improve the usability of internal tools used to build online PlayStation Store experiences.",
+					"line": "Design, develop, and improve the usability of internal tools which are used to build online PlayStation digital commerce platforms.",
 					"sublines": [
-						"Provide feedback on stories’ acceptance criteria and direction during planning and sprint ceremonies.",
-						"Take on new feature development work and resolve technical debt."
+						"Provide feedback on stories’ acceptance criteria and direction during sprint planning ceremonies.",
+						"Participate in frontend and backend code reviews."
 					]
 				},
 				{
-					"line": "Build and maintain a robust testing automation foundation codebase to allow anyone to easily script application tests for the frontend."
+					"line": "Perform frontend and backend feature development work.",
+					"sublines": [
+						"Created React/Vite application scaffolding to kickstart development on a new internal tool for an important business initiative.",
+						"Contribute to and provide feedback on an internal React component library which is used across a wide array of teams.",
+						"Updated backend systems to respect new data contracts related to a new internal tool."
+					]
 				},
 				{
-					"line": "Identify opportunities to increase testing coverage by thoroughly understanding code changes during the code review process.",
+					"line": "Promote web accessibility (a11y) across my team's development work and an internal React component library.",
 					"sublines": [
-						"Ensure the quality and relevancy of unit and component tests."
+						"Created a pared down version of the Web Content Accessibility Guidelines to create reasonable accessibility targets based on the purpose of our applications.",
+						"Teach other engineers about accessible design, semantic HTML, and common accessibility tools such as screen readers and expected web keyboard functionality."
 					]
+				},
+				{
+					"line": "Contribute to a robust testing automation codebase which allows anyone to easily script application tests for the frontend."
 				}
 			]
 		},
 		{
 			"company": "Epic Systems",
-			"title": "Software Developer",
+			"title": "Full-Stack Software Developer",
 			"startDate": {
 				"year": 2019,
 				"month": 6
@@ -44,9 +53,12 @@
 					"line": "Created a new web application for admitting, transferring, and discharging hospital inpatients to make efficient use of hospital bed space."
 				},
 				{
-					"line": "Lead the architecture and development of a new automated system which would assign patients to beds based on user-defined rulesets.",
+					"line": "Performed the architecture and development of new features across the frontend and backend."
+				},
+				{
+					"line": "Lead research and development of a brand new product.",
 					"sublines": [
-						"Work done for a customer in Singapore, requiring regular remote check-ins and design documentation reviews."
+						"Remotely communicated designs and collected feedback from the Singapore-based customer."
 					]
 				},
 				{

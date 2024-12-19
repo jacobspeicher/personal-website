@@ -1,6 +1,52 @@
 {
 	"projects": [
 		{
+			"name": "jacobspeicher.com",
+			"link": "https://github.com/jacobspeicher/personal-website",
+			"languages": [
+				"Preact/TypeScript",
+				"Vite",
+				"Nginx"
+			],
+			"descriptions": [
+				{
+					"line": "Details my professional experience and personal projects with direct links to relevant GitHub repositories.",
+					"sublines": [
+						"Parses JSON data to programmatically create components with project and experience information (like this component)."
+					]
+				},
+				{
+					"line": "Hosted on personally managed DigitalOcean droplet and served using Nginx.",
+					"sublines": [
+						"Written in Typescript using Preact, a lightweight React alternative.",
+						"Automatically built using Vite and deployed to the server using GitHub Actions after commits to the project's main branch."
+					]
+				}
+			
+			]
+		},
+		{
+			"name": "sarajenkinsartist.com",
+			"link": "https://github.com/jacobspeicher/sarajenkinsart",
+			"languages": [
+				"Preact/TypeScript",
+				"Vite",
+				"Nginx"
+			],
+			"descriptions": [
+				{
+					"line": "Highlights my partner's artwork along with providing an artist statement, biography, and contact information."
+				},
+				{
+					"line": "Hosted on personally managed DigitalOcean droplet and served using Nginx.",
+					"sublines": [
+						"Written in Typescript using Preact, a lightweight React alternative.",
+						"Automatically built using Vite and deployed to the server using GitHub Actions after commits to the project's main branch."
+					]
+				}
+			]
+		},
+		{
 			"name": "pAGE",
 			"link": "https://github.com/jacobspeicher/pAGE",
 			"languages": [
